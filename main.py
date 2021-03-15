@@ -17,4 +17,3 @@ elif sala >= 10298.36:
 
 #salida
 print(ISR)
-
