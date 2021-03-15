@@ -1,5 +1,5 @@
 #Entrada
-print("Cálcular mi impuesto")
+#print("Cálcular mi impuesto")
 sala= float(input("Ingrese su salario mensual: "))
 
 #operación1
