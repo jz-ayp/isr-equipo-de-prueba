@@ -1,23 +1,20 @@
-# ISR
-# Equipo 2: Roberto, Alejandra y Juan Pablo Valdez
-# Fecha: 25/02/2021
+#Entrada
+print("Cálcular mi impuesto")
+sala= float(input("Ingrese su salario mensual: "))
 
-#Entradas
-salario = float(input("Digite el salario para el calculo del impuesto:"))
+#operación1
 
-#Procesos
-if salario <= 3644.94:
-  ISR = 12.88 + ((salario - 0.01) * 0.10)
-  print(ISR)
 
-if  3644.94<=salario <= 7446.19:
-  ISR = 303.76 + ((salario - 3644.95) * 0.20)
-  print(ISR)
+#operación2
+if sala <= 3644.94 and sala >= 0.01:
+  ISR = 12.88+ ((sala - 0.01)*.1)
+elif sala <= 7446.19 and sala >= 3644.95:
+  ISR = 303.76+ ((sala - 3644.95)*.2)
+elif sala <= 10298.35 and sala >= 7446.2:
+  ISR = 1063.92+ ((sala - 7446.2)*.3)
+elif sala >= 10298.36:
+  ISR = 3327.42+ ((sala - 10298.36)*.35)
 
-if 7446.19<= salario <= 10298.35:
-  ISR = 1063.92 + ((salario - 7446.20) * 0.30)
-  print(ISR)
+#salida
+print(ISR)
 
-if salario > 10298.35:
-  ISR = 3327.42 + ((salario - 10298.35) * 0.35)
-  print(ISR)
